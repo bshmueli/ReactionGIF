@@ -7,7 +7,7 @@ To find out more about ReactionGIF, check out the ["Happy dance, slow clap"](htt
 
 Use this repository to download ReactionGIF. The repository includes the following data files:
 
-  * `ReactionGIF-ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
+  * `ReactionGIF.ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
   
 Additional fields for each original tweet include the ID of the reply tweet containing the reaction GIF, and the reaction category of the GIF.
 More information is available in the "Happy dance, slow clap" paper.
