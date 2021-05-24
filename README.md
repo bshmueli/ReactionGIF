@@ -21,7 +21,7 @@ To comply with Twitter's privacy policy, the dataset  include only the tweet IDs
 
   1. Install the latest version of Tweepy:
   
-    ``pip3 install tweepy``
+    pip3 install tweepy
   2. Rename our `credentials-example.py` to `credentials.py`
 
     ``mv credentials-example.py credentials.py``
