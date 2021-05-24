@@ -23,8 +23,12 @@ To comply with Twitter's privacy policy, the dataset  include only the tweet IDs
   
     `pip3 install tweepy`
   2. Rename our `credentials-example.py` to `credentials.py`
-  3. Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
-  4. Run the script:
+
+    `mv credentials-example.py credentials.py`
+  4. Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
+
+    `vim credentials.py`
+  6. Run the script:
   
     `python3 fetch-tweets.py`
 
