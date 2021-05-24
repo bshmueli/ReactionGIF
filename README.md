@@ -19,12 +19,12 @@ The fields included for each tweet are:
 
 To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweets' texts, follow these steps:
 
-  * Install the latest version of Tweepy:
+  1 Install the latest version of Tweepy:
   
     `pip3 install tweepy`
-  * Rename our `credentials-example.py` to `credentials.py`
-  * Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
-  * Run the script:
+  2 Rename our `credentials-example.py` to `credentials.py`
+  3 Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
+  4 Run the script:
   
     `python3 fetch-tweets.py`
 
