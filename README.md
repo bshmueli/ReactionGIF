@@ -5,7 +5,7 @@ ReactionGIF is a unique dataset of 30K sarcastic tweets and their GIF reactions.
 To find out more about ReactionGIF, 
 check out our ACL 2021 paper:
 
-* Shmueli et al, [Happy Dance, Slow Clap: Using Reaction GIFs to Predict Induced Affect on Twitter](https://arxiv.org/abs/2105.09967)
+* Shmueli, Ray and Ku, [Happy Dance, Slow Clap: Using Reaction GIFs to Predict Induced Affect on Twitter](https://arxiv.org/abs/2105.09967)
 
 Use this repository to download ReactionGIF. The repository includes the following data files:
 
