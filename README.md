@@ -21,16 +21,16 @@ To comply with Twitter's privacy policy, the dataset  include only the tweet IDs
 
   1. Install the latest version of Tweepy:
   
-    `pip3 install tweepy`
+    ``pip3 install tweepy``
   2. Rename our `credentials-example.py` to `credentials.py`
 
-    `mv credentials-example.py credentials.py`
+    ``mv credentials-example.py credentials.py``
   4. Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
 
-    `vim credentials.py`
+    ``vim credentials.py``
   6. Run the script:
   
-    `python3 fetch-tweets.py`
+    ``python3 fetch-tweets.py``
 
 The script will fetch the tweet texts and add a new ``text`` field, saving the new dataset to:
 
