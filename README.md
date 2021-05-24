@@ -1,17 +1,21 @@
 # ReactionGIF
 
-ReactionGIF is a unique dataset of around 30K sarcastic tweets and their GIF reactions. 
+ReactionGIF is a unique dataset of 30K sarcastic tweets and their GIF reactions. 
 
-To find out more about ReactionGIF, check out our ["Happy dance, slow clap"](https://arxiv.org/abs/2105.09967) paper (soon to appear in ACL 2021).
+To find out more about ReactionGIF, 
+check out our paper ["Happy Dance, Slow Clap: Using Reaction GIFs to Predict Induced Affect on Twitter"](https://arxiv.org/abs/2105.09967) (soon to appear in ACL 2021).
 
 Use this repository to download ReactionGIF. The repository includes the following data files:
 
   * `ReactionGIF.ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
-  
-Additional fields for each original tweet include the ID of the reply tweet containing the reaction GIF, and the reaction category of the GIF.
-More information is available in the "Happy dance, slow clap" paper.
 
-To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweet texts, follow these steps:
+The fields included for each tweet are:
+* ``idx``: record number (note: record numbers are not sequential)
+* `original_id`: the tweet ID of the original tweet which contains the eliciting text
+* ``reply_id``: the tweet ID of the reply tweet which contains the reaction GIF
+* ``label``: the reaction category
+
+To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweets' texts, follow these steps:
 
   * Install the latest version of Tweepy:
   
@@ -28,7 +32,7 @@ The script will fetch the texts and create a new file:
 
 ## Citation
 
-Kindly cite the paper using the following BibTex entry:
+If you use our dataset, kindly cite the paper using the following BibTex entry:
 
 ```
 @misc{shmueli2021happy,
