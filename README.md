@@ -12,10 +12,10 @@ Use this repository to download ReactionGIF. The repository includes the followi
   * `ReactionGIF.ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
 
 The fields included for each tweet are:
-* ``idx``: record number (note: record numbers are not sequential)
-* `original_id`: the tweet ID of the original tweet which contains the eliciting text
-* ``reply_id``: the tweet ID of the reply tweet which contains the reaction GIF
-* ``label``: the reaction category
+* ``idx`` record number (note: record numbers are not sequential)
+* `original_id` the tweet ID of the original tweet which contains the eliciting text
+* ``reply_id`` the tweet ID of the reply tweet which contains the reaction GIF
+* ``label`` the reaction category
 
 To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweets' texts, follow these steps:
 
@@ -23,7 +23,7 @@ To comply with Twitter's privacy policy, the dataset  include only the tweet IDs
   
     `pip3 install tweepy`
   * Rename our `credentials-example.py` to `credentials.py`
-  * Add your Twitter API credentials by editing `credentials.py`
+  * Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
   * Run the script:
   
     `python3 fetch-tweets.py`
