@@ -28,7 +28,7 @@ To comply with Twitter's privacy policy, the dataset  include only the tweet IDs
   
     `python3 fetch-tweets.py`
 
-The script will fetch the texts and create a new file:
+The script will fetch the tweet texts and add a new ``text`` field, saving the new dataset to:
 
   * `ReactionGIF.json`
 
