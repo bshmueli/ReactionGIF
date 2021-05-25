@@ -7,7 +7,7 @@ check out our ACL 2021 paper:
 
 * Shmueli, Ray and Ku, [Happy Dance, Slow Clap: Using Reaction GIFs to Predict Induced Affect on Twitter](https://arxiv.org/abs/2105.09967)
 
-Use this repository to download ReactionGIF. The repository includes the following data file:
+Use this repository to download ReactionGIF. The repository includes the following data file with the tweet information:
 
   * `ReactionGIF.ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
 
