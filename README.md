@@ -17,7 +17,7 @@ Each record in the file includes the following fields:
 * ``reply_id`` the tweet ID of the reply tweet which contains the reaction GIF
 * ``label`` the reaction category
 
-To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweets' texts, follow these steps:
+To comply with Twitter's privacy policy, the dataset  include only the tweet IDs. To fetch the original tweets' texts, you can write your own script, or you can use our own, easy-to-use script. To use our own script, follow these steps:
 
   1. Install the latest version of Tweepy:
   
