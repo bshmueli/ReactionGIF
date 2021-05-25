@@ -11,7 +11,7 @@ Use this repository to download ReactionGIF. The repository includes the followi
 
   * `ReactionGIF.ids.json` with original tweet IDs in [jsonlines](https://jsonlines.org) format.
 
-The fields included for each tweet are:
+Each record in the file includes the following fields:
 * ``idx`` record number (note: record numbers are not sequential)
 * `original_id` the tweet ID of the original tweet which contains the eliciting text
 * ``reply_id`` the tweet ID of the reply tweet which contains the reaction GIF
