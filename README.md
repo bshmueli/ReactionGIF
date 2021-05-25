@@ -19,7 +19,7 @@ Each record in the file includes the following fields:
 
 To comply with Twitter's [ToS](https://twitter.com/tos) and [Developer Agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy), the dataset  includes only the tweet IDs. To fetch the original tweets' texts, you can write your own script, or you can use our own, easy-to-use script. To use our own script, follow these steps:
 
-  1. Install the latest version of Tweepy:
+  1. Install the latest version of [Tweepy](https://www.tweepy.org):
   
     pip3 install tweepy
   2. Rename our `credentials-example.py` to `credentials.py`
