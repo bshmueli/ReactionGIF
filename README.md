@@ -19,16 +19,17 @@ Each record in the file includes the following fields:
 
 To comply with Twitter's [ToS](https://twitter.com/tos) and [Developer Agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy), the dataset  includes only the tweet IDs. To fetch the original tweets' texts, you can write your own script, or you can use our own, easy-to-use script. To use our own script, follow these steps:
 
-  1. Install the latest version of [Tweepy](https://www.tweepy.org):
+  1. Clone the repository or download the files `ReactionGIF.ids.json`, `credentials-example.py`, and `fetch-tweets.py`
+  2. Install the latest version of [Tweepy](https://www.tweepy.org):
   
     pip3 install tweepy
-  2. Rename our `credentials-example.py` to `credentials.py`
+  3. Rename our `credentials-example.py` to `credentials.py`
 
     mv credentials-example.py credentials.py
-  4. Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`
+  4. Add your [Twitter API credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) by editing `credentials.py`:
 
     vim credentials.py
-  6. Run the script:
+  5. Run the script:
   
     python3 fetch-tweets.py
 
