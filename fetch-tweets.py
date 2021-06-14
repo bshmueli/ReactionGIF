@@ -1,9 +1,11 @@
 from credentials import CONSUMER_KEY, CONSUMER_SECRET
-import tweepy, json
+import tweepy, json, argparse
 from time import sleep
 
 def fetch_tweets(rows):
   tweet_ids = [row['original_id'] for row in rows]
+  if args.gifs:
+    tweet_ids.extend([row['reply_id'] for row in rows])
   return {tweet.id_str:tweet for tweet in fetch_ids(tweet_ids) if tweet.id_str != ''}
 
 def fetch_ids(ids):
@@ -22,16 +24,28 @@ def deanon(de_anon_file, rows, tweets):
       if row['original_id'] in tweets:
         found += 1
         row['text'] = tweets[row['original_id']].full_text
+        if args.gifs:
+          if row['reply_id'] in tweets:
+            row['reply'] = tweets[row['reply_id']].extended_entities['media'][0]['video_info']['variants'][0]['url']
+          else:
+            row['reply'] = None
         f.write((json.dumps(row, ensure_ascii=False) + "\n"))
   print(f'Found {found} tweets out of {len(rows)}.')
 
 def convert(anon_file, de_anon_file):
     print('Fetching texts for {}'.format(anon_file))
     rows = [json.loads(row) for row in open(anon_file, 'r').readlines()]
+    if args.limit != -1:
+      rows = rows[0:args.limit]
     tweets = fetch_tweets(rows)
     deanon(de_anon_file, rows, tweets)
 
 if __name__ == "__main__":
+  parser = argparse.ArgumentParser(description='Fetch tweets.')
+  parser.add_argument('--gifs', action='store_true', help='Add links to reaction GIFs')
+  parser.add_argument('--limit', default=-1, type=int, help='Number of tweets to fetch')
+  args = parser.parse_args()
+
   try:
     CONSUMER_KEY
     CONSUMER_SECRET
