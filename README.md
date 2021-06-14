@@ -31,9 +31,9 @@ To comply with Twitter's [ToS](https://twitter.com/tos) and [Developer Agreement
     vim credentials.py
   5. Run the script:
   
-    python3 fetch-tweets.py
+    python3 fetch-tweets.py [--gifs]
 
-The script will fetch the tweet texts and add a new ``text`` field, saving the new dataset to:
+The script will fetch the tweet texts and add a new ``text`` field. If you turn on the `gifs` flag, the script will also add a ``reply`` field which will include the link to the GIF. The new dataset will be saved to:
 
   * `ReactionGIF.json`
 
