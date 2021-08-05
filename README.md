@@ -42,13 +42,20 @@ The script will fetch the tweet texts and add a new ``text`` field. If you turn 
 If you use our dataset, kindly cite the paper using the following BibTex entry:
 
 ```
-@misc{shmueli2021happy,
-      title={Happy Dance, Slow Clap: Using Reaction {GIFs} to Predict Induced Affect on {Twitter}}, 
-      author={Boaz Shmueli and Soumya Ray and Lun-Wei Ku},
-      year={2021},
-      eprint={2105.09967},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{shmueli-etal-2021-happy,
+    title = "Happy Dance, Slow Clap: {Using} Reaction {GIFs} to Predict Induced Affect on {Twitter}",
+    author = "Shmueli, Boaz  and
+      Ray, Soumya  and
+      Ku, Lun-Wei",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.50",
+    doi = "10.18653/v1/2021.acl-short.50",
+    pages = "395--401",
+    abstract = "Datasets with induced emotion labels are scarce but of utmost importance for many NLP tasks. We present a new, automated method for collecting texts along with their induced reaction labels. The method exploits the online use of reaction GIFs, which capture complex affective states. We show how to augment the data with induced emotion and induced sentiment labels. We use our method to create and publish ReactionGIF, a first-of-its-kind affective dataset of 30K tweets. We provide baselines for three new tasks, including induced sentiment prediction and multilabel classification of induced emotions. Our method and dataset open new research opportunities in emotion detection and affective computing.",
 }
 ```
 
