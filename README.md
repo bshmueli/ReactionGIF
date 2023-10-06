@@ -1,6 +1,6 @@
 # ReactionGIF
 
-ReactionGIF is a unique, first-of-its-kind dataset of 30K sarcastic tweets and their GIF reactions. 
+ReactionGIF is a unique, first-of-its-kind dataset of 30K tweets and their GIF reactions. 
 
 To find out more about ReactionGIF, 
 check out our ACL 2021 paper:
